@@ -10,9 +10,9 @@ Phone.prototype.printInfo = function(){
 Phone.prototype.sysType = function(){
   console.log(this.brand + " uses " + this.system + "as the operating system .")
 }
-var Iphone6S ("apple", 300, "black");
-var GalaxyS6 ("samsung", 400, "silver");
-var One ("onePlus", 350, "white");
+var Iphone6S = new Phone("apple", 300, "black", "IOS");
+var GalaxyS6 = new Phone("samsung", 400, "silver", "android");
+var One = new Phone("onePlus", 350, "white", "android");
 
 Iphone6S.printInfo();
 GalaxyS6.printInfo();
